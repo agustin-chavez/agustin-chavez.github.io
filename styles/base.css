@@ -21,7 +21,7 @@ html > * {
 
 body {
   margin: 0;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--portfolio-black);
   color: var(--portfolio-white);
   height: 100vh;
