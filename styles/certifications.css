@@ -1,0 +1,167 @@
+@import "base.css";
+
+#certifications-section {
+  background-color: var(--portfolio-maroon);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.certifications-container > h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.certificate > h3 {
+  font-size: 12px;
+}
+
+.grid-container {
+  display: grid;
+  justify-items: center;
+}
+
+.certificate {
+  background-color: var(--portfolio-white);
+  color: var(--portfolio-black);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.certificate > h2 > .simple-link {
+  color: var(--portfolio-maroon);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.certificate > h2 > .simple-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.certificate > h2 > .simple-link:active {
+  color: var(--portfolio-black);
+}
+
+.certificate > h2 > .simple-link:visited {
+  color: var(--portfolio-maroon);
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    max-width: 300px;
+    width: 70vw;
+    max-height: 100px;
+    height: 7vh;
+  }
+
+  .certificate > h2 {
+    font-size: 0.8rem;
+  }
+
+  .certificate > p {
+    display: none;
+  }
+
+  .certificate > img {
+    display: none;
+  }
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .certifications-container > h1 {
+    font-size: 3rem;
+  }
+
+  .certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    max-width: 250px;
+    width: 70vw;
+    max-height: 300px;
+    height: 14vh;
+  }
+
+  .certificate > img {
+    display: none;
+  }
+
+  .certificate > p {
+    display: none;
+  }
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .certificate {
+    padding: 30px;
+    max-width: 200px;
+    width: 40vw;
+    max-height: 500px;
+    height: 30vh;
+  }
+
+  .certificate > p {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .certificate {
+    padding: 30px;
+    max-width: 220px;
+    width: 20vw;
+    max-height: 500px;
+    height: 80vh;
+  }
+
+  .certificate > img {
+    display: block;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .certificate {
+    padding: 30px;
+    max-width: 350px;
+    width: 70vw;
+  }
+
+  .certificate > img {
+    height: 200px;
+  }
+}

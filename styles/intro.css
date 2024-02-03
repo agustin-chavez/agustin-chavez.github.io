@@ -1,0 +1,139 @@
+@import "base.css";
+
+#intro-section {
+  background-color: var(--portfolio-blue);
+  background-image: url(/images/profile-image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-container {
+  height: 100%;
+  display: flex;
+  animation: fade-up 6s;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.introduction {
+  padding-top: 10%;
+  padding-left: 30px;
+  padding-right: 30px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-shadow: 4px 4px 8px var(--portfolio-strong-gray);
+  animation: fade-up 3s;
+}
+
+.accent {
+  color: var(--portfolio-light-blue);
+  font-weight: bolder;
+}
+
+.hello-world {
+  font-size: clamp(1rem, 8vw, 3rem);
+  letter-spacing: 0.3rem;
+}
+
+.introduce-me {
+  margin-top: 10px;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.ctas {
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.cta {
+  color: var(--portfolio-white);
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.cta-text {
+  display: none;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-shadow: 4px 4px 8px var(--portfolio-strong-gray);
+  animation: fade-up 6s;
+}
+
+.welcome-message,
+.experience-body {
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin: 0 40px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-container {
+    justify-content: space-around;
+    background-position-y: 18%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #intro-section {
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+  }
+
+  .intro-container {
+    grid-area: text;
+  }
+
+  .ctas {
+    display: flex;
+  }
+
+  .cta {
+    display: inline-block;
+    width: 50px;
+    padding: 10px 15px;
+    border: 1px solid var(--portfolio-white);
+    color: var(--portfolio-white);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 0.1rem;
+  }
+
+  .cta-text {
+    display: block;
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+
+  .cta:hover {
+    color: var(--portfolio-white);
+    border: 1px solid var(--portfolio-strong-gray);
+    cursor: pointer;
+  }
+
+  .linkedin:hover {
+    background-color: #2483ff;
+  }
+
+  .email:hover {
+    background-color: #b33127;
+  }
+
+  .github:hover {
+    background-color: #ffb22d;
+  }
+
+  .resume:hover {
+    background-color: #10a995;
+  }
+}

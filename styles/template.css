@@ -1,0 +1,35 @@
+@import "base.css";
+
+#template-section,
+#technologies-section,
+#projects-section,
+#blog-section,
+#contact-section,
+#end-section
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signature {
+  margin-left: 200px;
+}
+
+#technologies-section {
+  background-color: var(--portfolio-strong-gray);
+}
+
+#projects-section {
+  background-color: var(--portfolio-green);
+}
+
+#blog-section {
+  background-color: var(--portfolio-white);
+  color: var(--portfolio-strong-gray);
+}
+
+#end-section {
+  background-color: var(--portfolio-black);
+}

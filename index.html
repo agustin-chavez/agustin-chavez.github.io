@@ -14,13 +14,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles/base.css" rel="stylesheet" />
+    <link href="styles/intro.css" rel="stylesheet" />
+    <link href="styles/experience.css" rel="stylesheet" />
+    <link href="styles/certifications.css" rel="stylesheet" />
+    <link href="styles/template.css" rel="stylesheet" />
+
     <link rel="icon" href="./images/favicon.png" type="image/png" />
+    
   </head>
   <body>
     <main>
       <section id="intro-section">
-        <div class="flex-container flex-column flex-sb">
+        <div class="intro-container">
           <h1 class="introduction">
             <div class="hello-world">Hello 🌎 world</div>
             <div class="introduce-me">
@@ -68,7 +74,7 @@
                 ><span class="cta-text">Github</span></a
               >
               <a
-                href="/images/resume/CHAVEZ_AGUSTIN_RESUME.pdf"
+                href="/pdf/CHAVEZ_AGUSTIN_RESUME.pdf"
                 class="cta resume"
                 target="_blank"
                 ><i class="fa-solid fa-download"></i
@@ -79,19 +85,79 @@
         </div>
       </section>
 
+      <section id="certifications-section">
+        <div class="certifications-container">
+          <h1>Certifications</h1>
+
+          <div class="grid-container">
+            <div class="certificate">
+              <h2><a class="simple-link" target="_blank" href="">CS50X Harvard's Introduction to Computer Science</a></h2>
+              <h3>by HarvardX</h3>
+              <img src="images/certifications/CS50x.png"/>
+              <p class="description">
+                I developed problem-solving skills using C, establishing a solid foundation in computer science principles. 
+                Additionally, I acquired proficiency in Python, SQL, and Flask for real-world applications, 
+                while gaining fundamental insights into cybersecurity and artificial intelligence.
+              </p>
+            </div>
+            <div class="certificate">
+              <h2><a class="simple-link" target="_blank" href="https://www.freecodecamp.org/certification/agustinchavezdev/javascript-algorithms-and-data-structures-v8">JavaScript <br> Algorithms and Data Structures</a></h2>
+              <h3>by freeCodeCamp</h3>
+              <img src="images/certifications/js-freecodecamp.jpeg"/>
+              <p class="description">
+                Gained expertise in JavaScript through multiple challenges and projects, showcasing a solid understanding of 
+                fundamental programming concepts such as algorithms, collections, functional programming, and DOM manipulation.
+              </p>
+            </div>
+            <div class="certificate">
+              <h2><a class="simple-link" target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/EW7CVD8CHZQ6">Spring <br> Ecosystem and Core</a></h2>
+              <h3>by LearnQuest</h3>
+              <img src="images/certifications/spring-cert.jpeg"/>
+              <p class="description">
+                Acquired expertise in the Spring framework, showcasing skills in dependency injection, inversion of control 
+                and annotations in the Spring ecosystem, enhancing my ability to develop efficient, maintainable and 
+                enterprise-level Java applications. 
+              </p>
+            </div>
+            <div class="certificate">
+              <h2><a class="simple-link" target="_blank" href="https://www.freecodecamp.org/certification/agustinchavezdev/responsive-web-design">Responsive Web Design <br> with Flexbox and Grid</a></h2>
+              <h3>by freeCodeCamp</h3>
+              <img src="images/certifications/web-freecodecamp.jpeg"/>
+              <p class="description">
+                
+                Acquired skills in HTML, CSS, Flexbox, and CSS Grid, ensuring a seamless user experience across various devices. 
+                Designed and implemented responsive projects, showcasing a practical understanding of modern web design principles and techniques.
+              </p>
+            </div>
+            <div class="certificate">
+              <h2><a class="simple-link" target="_blank" href="">EF SET English Certificate <br> (B2 Proficient)</a></h2>
+              <h3>by EF Education First</h3>
+              <img src="images/certifications/EFSET.jpeg" style="border: 1px solid gray;"/>
+              <p class="description">
+                Validated through successful completion of the test's components in reading, writing, listening, and speaking.
+                Demonstrating proficiency in the English language, effective communication in both 
+                written and spoken English.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
       <section id="experience-section">
-        <div class="block-container">
+        <div class="experience-container">
           <div class="experience-header">
             <h1>5+ years of experience at</h1>
-            <img src="images/logo-despegar.png" height="100px" />
-            <h1 class="experience-title">
-              LATAM's leading Travel Technology Company
+            <img src="images/experience/logo-despegar.png"/>
+            <h1>
+              LATAM's leading travel technology company
             </h1>
-            <p class="font-size-small">5K+ employees. 50M+ visitors. $464M revenue in Q3/23.</p>
+            <p class="experience-subtitle">5K+ employees. 50M+ visitors. $464M revenue in Q3/23.</p>
             <a class="simple-link" href="https://www.linkedin.com/company/despegar/" target="_blank">Despegar on LinkedIn</a>
           </div>
 
           <div class="experience-body">
+            <img src="images/experience/despegar-productos.gif" />
             <div class="despegar-experience">
               <p>
                 <strong>Selected as one of the 20 members</strong> for the 12th edition of Despegar's Jóvenes de Alto Vuelo Program (JAV12) and 
@@ -125,35 +191,39 @@
         </div>
       </section>
 
-      <section id="certifications-section">
-        <h1 class="underlined">Certifications</h1>
-        <div class="grid-container">
-          <div class="certificate">
-            <h2>CS50X Harvard's <br> Introduction to Computer Science</h2>
-            <img src="images/certifications/CS50x.png" height="100%"/>
-          </div>
-          <div class="certificate">
-            <h2>JavaScript <br> Algorithms and Data Structures</h2>
-            <img src="images/certifications/js-freecodecamp.jpeg" height="100%"/>
-          </div>
-          <div class="certificate">
-            <h2>Responsive <br> Web Design</h2>
-            <img src="images/certifications/web-freecodecamp.jpeg" height="100%"/>
-          </div>
-          <div class="certificate">
-            <h2>Spring <br> Ecosystem and Core</h2>
-            <img src="images/certifications/spring-cert.jpeg" height="100%"/>
+      <section id="technologies-section">
+        <div class="template-container">
+          <h1>Technologies I've work with...</h1>
+          <h2>Under construction!</h2>
+          <div class="signature">
+            <span>Agustin 👨🏻‍💻</span> 
           </div>
         </div>
       </section>
 
-      <section id="footer-section">
-        <div class="footer-container">
-          <h1>That's it for now...</h1>
-          <h2>Let me now what's next!</h2>
+      <section id="projects-section">
+        <div class="template-container">
+          <h1>Projects for you to roast...</h1>
+          <h2>Under construction!</h2>
           <div class="signature">
-            <span>Agustin 👨🏻‍💻</div> 
+            <span>Agustin 👨🏻‍💻</span> 
           </div>
+        </div>
+      </section>
+
+      <section id="blog-section">
+        <div class="template-container">
+          <h1>Blog (because I should)</h1>
+          <h2>Under construction!</h2>
+          <div class="signature">
+            <span>Agustin 👨🏻‍💻</span> 
+          </div>
+        </div>
+      </section>
+
+      <section id="end-section">
+        <div class="template-container">
+          <h1>The End</h1>
         </div>
       </section>
     </main>

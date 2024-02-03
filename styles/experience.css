@@ -1,0 +1,105 @@
+@import "base.css";
+
+#experience-section {
+  background-color: var(--despegar-color);
+}
+
+.experience-container {
+  height: 100%;
+  animation: fade-up 6s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-header {
+  font-size: 0.6rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.experience-header > img {
+  height: 50px;
+}
+
+.experience-body > img {
+    display: none;
+}
+
+.despegar-experience {
+  font-size: 0.6rem;
+  text-align: left;
+}
+
+.simple-link {
+  color: var(--portfolio-white);
+  font-family: helvetica;
+  text-decoration: none;
+}
+
+.simple-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.simple-link:active {
+  color: var(--portfolio-black);
+}
+
+.simple-link:visited {
+  color: var(--portfolio-white);
+}
+
+
+@media screen and (min-width: 768px) {
+  .experience-header {
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+
+  .despegar-experience {
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+
+  .experience-header > img {
+    height: 100px;
+  }
+
+  .experience-body > img {
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--portfolio-white);
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  #experience-section {
+    background-image: url(/images/experience/despegar-app.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+  }
+
+  .experience-container {
+    grid-area: text;
+  }
+
+  .experience-header {
+    font-size: 0.9rem;
+  }
+
+  .experience-header > img {
+    height: 80px;
+  }
+
+  .experience-body > img {
+    display: inline-block;
+    height: 60px;
+    margin: 0;
+  }
+}
