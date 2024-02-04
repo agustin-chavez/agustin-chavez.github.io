@@ -15,6 +15,16 @@
   justify-content: space-between;
 }
 
+.construction-label {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(235, 89, 40);;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 .introduction {
   padding-top: 10%;
   padding-left: 30px;
