@@ -82,7 +82,7 @@
     display: none;
   }
 
-  .certificate > img {
+  .certificate > a {
     display: none;
   }
 }
@@ -110,7 +110,7 @@
     height: 14vh;
   }
 
-  .certificate > img {
+  .certificate > a {
     display: none;
   }
 
@@ -153,8 +153,11 @@
     height: 80vh;
   }
 
-  .certificate > img {
+  .certificate > a {
     display: block;
+  }
+
+  .certificate > a > img {
     height: 150px;
   }
 }
@@ -166,7 +169,7 @@
     width: 70vw;
   }
 
-  .certificate > img {
+  .certificate > a > image {
     height: 200px;
   }
 }
