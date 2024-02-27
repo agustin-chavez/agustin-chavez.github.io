@@ -17,10 +17,6 @@
   margin-left: 200px;
 }
 
-#technologies-section {
-  background-color: var(--portfolio-strong-gray);
-}
-
 #projects-section {
   background-color: var(--portfolio-green);
 }
