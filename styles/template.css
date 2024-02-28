@@ -27,5 +27,13 @@
 }
 
 #end-section {
+  font-family: 'Courier New', monospace;
   background-color: var(--portfolio-black);
+  color: rgb(41, 245, 41);
+}
+
+.jump {
+  color: rgb(41, 245, 41);
+  text-decoration: none;
+  margin-top: 20px;
 }

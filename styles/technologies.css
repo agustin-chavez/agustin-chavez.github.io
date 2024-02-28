@@ -2,12 +2,29 @@
 
 
 #technologies-section {
-    background-color: var(--portfolio-white);
+    background-color: var(--portfolio-light-blue);
 }
 
 #technologies-section > h1 {
-    color: var(--portfolio-black);
+    color: var(--portfolio-blue);
     font-size: 2.4rem;
     text-align: center;
     margin: 20px;
+}
+
+#technologies-section > img {
+    border-radius: 20px;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    #technologies-section > img {
+        height: 400px;
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    #technologies-section > img {
+        height: 500px;
+    }    
 }
